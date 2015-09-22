@@ -20,12 +20,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
         // Tabに設定するViewControllerのインスタンスを生成.
-        let makeTab: UIViewController = MakeViewController()
-        let takePhotoTab: UIViewController = TakePhotoViewController()
-        let settingTab: UIViewController = SettingViewController()
+        let makeStoryboard = UIStoryboard(name: "Make", bundle: nil)
+        let makeViewController = makeStoryboard.instantiateViewControllerWithIdentifier("MakeVC") as! MakeViewController
+        
+        let readStoryboard = UIStoryboard(name: "Read", bundle: nil)
+        let readViewController = readStoryboard.instantiateViewControllerWithIdentifier("ReadVC") as! ReadViewController
+        
+        let settingStoryboard = UIStoryboard(name: "Setting", bundle: nil)
+        let settingViewController = settingStoryboard.instantiateViewControllerWithIdentifier("SettingVC") as! SettingViewController
+        
+        let makeTab: UIViewController = makeViewController
+        makeTab.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.Featured, tag: 1)
+        let readTab: UIViewController = readViewController
+        readTab.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.Featured, tag: 1)
+        let settingTab: UIViewController = settingViewController
+        settingTab.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.Featured, tag: 1)
         
         // タブを要素に持つArrayの.を作成する.
-        let myTabs = NSArray(objects: makeTab, takePhotoTab, settingTab)
+        let myTabs = NSArray(objects: makeTab, readTab, settingTab)
         
         myTabBarController = UITabBarController()
         

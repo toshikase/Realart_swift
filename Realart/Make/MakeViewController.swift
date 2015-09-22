@@ -9,27 +9,14 @@
 import UIKit
 
 class MakeViewController: UIViewController {
-    init() {
-        super.init(nibName: nil, bundle: nil)
-        
-        // Viewの背景色をCyanに設定する.
-        self.view.backgroundColor = UIColor.whiteColor()
-        
-        self.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.Featured, tag: 1)
-    }
-    
-    required init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
-    
-    required override init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: NSBundle!) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-    }
+    @IBOutlet weak var postButton: UIButton!
+    @IBOutlet weak var nameField: UITextField!
+    @IBOutlet weak var titleField: UITextField!
+    @IBOutlet weak var dateField: UITextField!
+    @IBOutlet weak var registerButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

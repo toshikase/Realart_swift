@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Make View Controller-->
+        <scene sceneID="4vz-pk-TE4">
+            <objects>
+                <viewController storyboardIdentifier="MakeVC" id="fYh-Z2-ncu" customClass="MakeViewController" customModule="Realart" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cow-t7-QoY"/>
+                        <viewControllerLayoutGuide type="bottom" id="TpK-oM-Ny5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="K2t-IZ-A6G">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N9I-XJ-6Cj">
+                                <rect key="frame" x="100" y="200" width="400" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yFT-4T-Qsp">
+                                <rect key="frame" x="100" y="280" width="400" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aA0-8O-wcJ">
+                                <rect key="frame" x="100" y="360" width="400" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVK-aF-gTD">
+                                <rect key="frame" x="200" y="440" width="200" height="30"/>
+                                <state key="normal" title="登録">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wCJ-E7-FcR">
+                                <rect key="frame" x="200" y="120" width="200" height="30"/>
+                                <state key="normal" title="ファイルを投稿">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="wVK-aF-gTD" secondAttribute="trailing" constant="200" id="0YG-BX-P3b"/>
+                            <constraint firstItem="yFT-4T-Qsp" firstAttribute="top" secondItem="N9I-XJ-6Cj" secondAttribute="bottom" constant="50" id="5ka-Rr-R2T"/>
+                            <constraint firstItem="aA0-8O-wcJ" firstAttribute="leading" secondItem="K2t-IZ-A6G" secondAttribute="leading" constant="100" id="7a7-oC-F1o"/>
+                            <constraint firstAttribute="trailing" secondItem="N9I-XJ-6Cj" secondAttribute="trailing" constant="100" id="9Tg-O1-7VJ"/>
+                            <constraint firstItem="wCJ-E7-FcR" firstAttribute="leading" secondItem="K2t-IZ-A6G" secondAttribute="leading" constant="200" id="BJ1-XP-nqb"/>
+                            <constraint firstItem="N9I-XJ-6Cj" firstAttribute="leading" secondItem="K2t-IZ-A6G" secondAttribute="leading" constant="100" id="Fkx-E0-eLn"/>
+                            <constraint firstAttribute="trailing" secondItem="aA0-8O-wcJ" secondAttribute="trailing" constant="100" id="HFM-qd-8J3"/>
+                            <constraint firstItem="N9I-XJ-6Cj" firstAttribute="top" secondItem="wCJ-E7-FcR" secondAttribute="bottom" constant="50" id="OUp-yP-kso"/>
+                            <constraint firstAttribute="trailing" secondItem="yFT-4T-Qsp" secondAttribute="trailing" constant="100" id="RCV-Jz-AzK"/>
+                            <constraint firstItem="wVK-aF-gTD" firstAttribute="leading" secondItem="K2t-IZ-A6G" secondAttribute="leading" constant="200" id="Sdz-SQ-h0I"/>
+                            <constraint firstItem="yFT-4T-Qsp" firstAttribute="leading" secondItem="K2t-IZ-A6G" secondAttribute="leading" constant="100" id="Vl7-aY-O3Z"/>
+                            <constraint firstAttribute="trailing" secondItem="wCJ-E7-FcR" secondAttribute="trailing" constant="200" id="rT3-oX-QVW"/>
+                            <constraint firstItem="wVK-aF-gTD" firstAttribute="top" secondItem="aA0-8O-wcJ" secondAttribute="bottom" constant="50" id="tQb-71-72O"/>
+                            <constraint firstItem="wCJ-E7-FcR" firstAttribute="top" secondItem="cow-t7-QoY" secondAttribute="bottom" constant="100" id="z0k-dm-mCC"/>
+                            <constraint firstItem="aA0-8O-wcJ" firstAttribute="top" secondItem="yFT-4T-Qsp" secondAttribute="bottom" constant="50" id="zwn-4U-J0f"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dateField" destination="aA0-8O-wcJ" id="hFE-Zh-i9H"/>
+                        <outlet property="nameField" destination="N9I-XJ-6Cj" id="Qxn-0l-ymw"/>
+                        <outlet property="postButton" destination="wCJ-E7-FcR" id="VnJ-5X-Win"/>
+                        <outlet property="registerButton" destination="wVK-aF-gTD" id="awa-7b-6O1"/>
+                        <outlet property="titleField" destination="yFT-4T-Qsp" id="ddL-7y-WPs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1f9-A5-27B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="243" y="365"/>
+        </scene>
+    </scenes>
+</document>
