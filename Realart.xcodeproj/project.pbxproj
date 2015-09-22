@@ -13,6 +13,9 @@
 		1D39645F1BB12A15003FD084 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D39645E1BB12A15003FD084 /* Images.xcassets */; };
 		1D3964621BB12A15003FD084 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D3964601BB12A15003FD084 /* LaunchScreen.xib */; };
 		1D39646E1BB12A15003FD084 /* RealartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D39646D1BB12A15003FD084 /* RealartTests.swift */; };
+		1D3964781BB12BAF003FD084 /* TakePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3964771BB12BAF003FD084 /* TakePhotoViewController.swift */; };
+		1D39647A1BB12BF5003FD084 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3964791BB12BF5003FD084 /* SettingViewController.swift */; };
+		1D39647C1BB12C24003FD084 /* MakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D39647B1BB12C24003FD084 /* MakeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		1D3964671BB12A15003FD084 /* RealartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D39646C1BB12A15003FD084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D39646D1BB12A15003FD084 /* RealartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealartTests.swift; sourceTree = "<group>"; };
+		1D3964771BB12BAF003FD084 /* TakePhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TakePhotoViewController.swift; path = TakePhoto/TakePhotoViewController.swift; sourceTree = "<group>"; };
+		1D3964791BB12BF5003FD084 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingViewController.swift; path = Setting/SettingViewController.swift; sourceTree = "<group>"; };
+		1D39647B1BB12C24003FD084 /* MakeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MakeViewController.swift; path = Make/MakeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +84,11 @@
 			isa = PBXGroup;
 			children = (
 				1D3964571BB12A15003FD084 /* AppDelegate.swift */,
-				1D3964591BB12A15003FD084 /* ViewController.swift */,
 				1D39645B1BB12A15003FD084 /* Main.storyboard */,
+				1D3964591BB12A15003FD084 /* ViewController.swift */,
+				1D39647B1BB12C24003FD084 /* MakeViewController.swift */,
+				1D3964771BB12BAF003FD084 /* TakePhotoViewController.swift */,
+				1D3964791BB12BF5003FD084 /* SettingViewController.swift */,
 				1D39645E1BB12A15003FD084 /* Images.xcassets */,
 				1D3964601BB12A15003FD084 /* LaunchScreen.xib */,
 				1D3964551BB12A15003FD084 /* Supporting Files */,
@@ -213,7 +222,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D39645A1BB12A15003FD084 /* ViewController.swift in Sources */,
+				1D39647C1BB12C24003FD084 /* MakeViewController.swift in Sources */,
+				1D3964781BB12BAF003FD084 /* TakePhotoViewController.swift in Sources */,
 				1D3964581BB12A15003FD084 /* AppDelegate.swift in Sources */,
+				1D39647A1BB12BF5003FD084 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

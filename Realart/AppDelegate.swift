@@ -12,10 +12,30 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var myTabBarController: UITabBarController!
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        // Tabに設定するViewControllerのインスタンスを生成.
+        let makeTab: UIViewController = MakeViewController()
+        let takePhotoTab: UIViewController = TakePhotoViewController()
+        let settingTab: UIViewController = SettingViewController()
+        
+        // タブを要素に持つArrayの.を作成する.
+        let myTabs = NSArray(objects: makeTab, takePhotoTab, settingTab)
+        
+        myTabBarController = UITabBarController()
+        
+        myTabBarController?.setViewControllers(myTabs as [AnyObject], animated: false)
+        
+        // RootViewControllerに設定する.
+        self.window!.rootViewController = myTabBarController
+        
+        self.window!.makeKeyAndVisible()
+        
         return true
     }
 
