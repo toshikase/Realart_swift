@@ -10,7 +10,6 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
     var myTabBarController: UITabBarController!
 
@@ -41,7 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         myTabBarController = UITabBarController()
         
-        myTabBarController?.setViewControllers(myTabs as [AnyObject], animated: false)
+        myTabBarController?.setViewControllers(myTabs as? [UIViewController], animated: false)
         
         // RootViewControllerに設定する.
         self.window!.rootViewController = myTabBarController

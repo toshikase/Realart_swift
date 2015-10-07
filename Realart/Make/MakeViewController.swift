@@ -17,6 +17,8 @@ class MakeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        postButton.setTitle("投稿", forState:.Normal)
+        registerButton.setTitle("登録", forState: .Normal)
     }
 
     override func didReceiveMemoryWarning() {
