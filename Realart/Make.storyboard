@@ -22,7 +22,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVK-aF-gTD">
-                                <rect key="frame" x="200" y="480" width="200" height="20"/>
+                                <rect key="frame" x="200" y="530" width="200" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="dKJ-4X-BXX"/>
                                 </constraints>
@@ -55,13 +55,14 @@
                             <constraint firstItem="N9I-XJ-6Cj" firstAttribute="top" secondItem="wCJ-E7-FcR" secondAttribute="bottom" constant="50" id="OUp-yP-kso"/>
                             <constraint firstItem="wVK-aF-gTD" firstAttribute="leading" secondItem="K2t-IZ-A6G" secondAttribute="leading" constant="200" id="Sdz-SQ-h0I"/>
                             <constraint firstAttribute="trailing" secondItem="wCJ-E7-FcR" secondAttribute="trailing" constant="100" id="rT3-oX-QVW"/>
-                            <constraint firstItem="TpK-oM-Ny5" firstAttribute="top" secondItem="wVK-aF-gTD" secondAttribute="bottom" constant="100" id="rtc-Nt-Re1"/>
+                            <constraint firstItem="TpK-oM-Ny5" firstAttribute="top" secondItem="wVK-aF-gTD" secondAttribute="bottom" constant="50" id="rtc-Nt-Re1"/>
                             <constraint firstItem="wCJ-E7-FcR" firstAttribute="top" secondItem="cow-t7-QoY" secondAttribute="bottom" constant="50" id="z0k-dm-mCC"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="nameField" destination="N9I-XJ-6Cj" id="Qxn-0l-ymw"/>
                         <outlet property="postButton" destination="wCJ-E7-FcR" id="VnJ-5X-Win"/>
+                        <outlet property="qrImageView" destination="h32-fg-LQm" id="1gJ-eO-REo"/>
                         <outlet property="registerButton" destination="wVK-aF-gTD" id="awa-7b-6O1"/>
                     </connections>
                 </viewController>

@@ -12,19 +12,18 @@ import CoreImage
 class MakeViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var postButton: UIButton!
     @IBOutlet weak var nameField: UITextField!
-    @IBOutlet weak var titleField: UITextField!
-    @IBOutlet weak var dateField: UITextField!
     @IBOutlet weak var registerButton: UIButton!
+    @IBOutlet weak var qrImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        postButton.setTitle("投稿", forState:.Normal)
+//        postButton.setTitle("投稿", forState:.Normal)
         registerButton.setTitle("登録", forState: .Normal)
         
         nameField.delegate = self
     }
     
-    func createQRCode(message: String, correctionLevel: String = "M", moduleSize: CGFloat = 1) -> UIImage {
+    func createQRCode(message: String, correctionLevel: String = "M", moduleSize: CGFloat = 1){
         
         let dat = message.dataUsingEncoding(NSUTF8StringEncoding)!
         
@@ -37,8 +36,9 @@ class MakeViewController: UIViewController, UITextFieldDelegate{
         let sizeTransform = CGAffineTransformMakeScale(moduleSize, moduleSize)
         let ciImg = qr.outputImage!.imageByApplyingTransform(sizeTransform)
 
-        print(ciImg)
-        return UIImage(CIImage: ciImg, scale: 1, orientation: .Up)
+        qrImageView.image = UIImage(CIImage: ciImg, scale: 1, orientation: .Up)
+        
+//        return UIImage(CIImage: ciImg, scale: 1, orientation: .Up)
 //        let ciContext = CIContext(options: nil)
 //        let cgImg = ciContext.createCGImage(ciImg, fromRect: ciImg.extent)
 //        return UIImage(CGImage: cgImg, scale: 1, orientation: .Up)
