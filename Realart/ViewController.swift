@@ -9,10 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController,UITabBarControllerDelegate {
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var subTitleLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "art.jpg")!)
+        titleLabel.text = "Realarts"
+        titleLabel.font = UIFont(name: "Times New Roman", size: 32)
+        
+        subTitleLabel.font = UIFont(name:"Times New Roman", size:16)
+        subTitleLabel.text = "Anti-Counterfeit Service\nBased On Blockchain"
     }
 
     override func didReceiveMemoryWarning() {

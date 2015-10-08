@@ -19,6 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
         // Tabに設定するViewControllerのインスタンスを生成.
+        let listStoryboard = UIStoryboard(name: "List", bundle: nil)
+        let listViewController = listStoryboard.instantiateViewControllerWithIdentifier("ListVC") as! ListViewController
+        
         let makeStoryboard = UIStoryboard(name: "Make", bundle: nil)
         let makeViewController = makeStoryboard.instantiateViewControllerWithIdentifier("MakeVC") as! MakeViewController
         
@@ -28,21 +31,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let settingStoryboard = UIStoryboard(name: "Setting", bundle: nil)
         let settingViewController = settingStoryboard.instantiateViewControllerWithIdentifier("SettingVC") as! SettingViewController
         
+        let listTab: UIViewController = listViewController
+        listTab.tabBarItem = UITabBarItem(title: "List", image: UIImage(named: "list25.png"), tag: 1)
+        
         let makeTab: UIViewController = makeViewController
-        makeTab.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.Featured, tag: 1)
+        makeTab.tabBarItem = UITabBarItem(title: "Edit", image: UIImage(named: "edit25.png"), tag: 2)
+       
         let readTab: UIViewController = readViewController
-        readTab.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.Featured, tag: 1)
+        readTab.tabBarItem = UITabBarItem(title: "Read", image: UIImage(named: "camera25.png"), tag: 3)
+       
         let settingTab: UIViewController = settingViewController
-        settingTab.tabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.Featured, tag: 1)
+        settingTab.tabBarItem = UITabBarItem(title: "Setting", image: UIImage(named: "setting25.png"), tag: 4)
         
         // タブを要素に持つArrayの.を作成する.
-        let myTabs = NSArray(objects: makeTab, readTab, settingTab)
+        let myTabs = NSArray(objects: listTab, makeTab, readTab, settingTab)
         
         myTabBarController = UITabBarController()
         
         myTabBarController?.setViewControllers(myTabs as? [UIViewController], animated: false)
         
         // RootViewControllerに設定する.
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let controller = storyboard.instantiateViewControllerWithIdentifier("MainVC") as! ViewController
+//        self.window!.rootViewController = controller
+
         self.window!.rootViewController = myTabBarController
         
         self.window!.makeKeyAndVisible()
