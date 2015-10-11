@@ -14,6 +14,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var tableView: UITableView!
     let uri = Uri()
     var currentUserId:Int!
+    var products = [Product]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +40,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int  {
-        return 1
+        return products.count
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
@@ -48,6 +49,8 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath:NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Product") as! ListTableViewCell
+        cell.productName.text = products[indexPath.row].name
+        cell.producerName.text = products[indexPath.row].user.name
         return cell
     }
     
@@ -59,16 +62,28 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
             "id":currentUserId
         ]
         
-        Alamofire.request(.POST, uri.usersApi + "/list", parameters: parameters, encoding: .JSON)
+        Alamofire.request(.POST, uri.productsApi + "/list", parameters: parameters, encoding: .JSON)
             .responseJSON { request, response, result in
                 let jsonObj = JSON(result.value!)
                 print(jsonObj)
+                let productsCount = jsonObj.count
+                for var index = 0; index < productsCount; index++ {
+                    let product = Product(
+                        id:         jsonObj[index]["id"].int!,
+                        name:       jsonObj[index]["body"].string!,
+                        userId:     jsonObj[index]["user_id"].int!
+                    )
+                    self.products.append(product)
+                }
         }
     }
 
 }
 
 class ListTableViewCell:UITableViewCell{
+    @IBOutlet weak var productImageView: UIImageView!
+    @IBOutlet weak var productName: UILabel!
+    @IBOutlet weak var producerName: UILabel!
     
     override func awakeFromNib() {
     

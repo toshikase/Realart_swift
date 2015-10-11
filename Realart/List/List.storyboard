@@ -21,26 +21,61 @@
                                 <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Product" rowHeight="102" id="RK4-dk-CmU" customClass="ListTableViewCell" customModule="Realart" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="600" height="102"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Product" rowHeight="72" id="RK4-dk-CmU" customClass="ListTableViewCell" customModule="Realart" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="72"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RK4-dk-CmU" id="d9A-iF-UXg">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="101.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="71.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="art.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="z8i-Jz-UsG">
-                                                    <rect key="frame" x="8" y="8" width="85.5" height="85.5"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="z8i-Jz-UsG">
+                                                    <rect key="frame" x="8" y="8" width="55.5" height="55.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="z8i-Jz-UsG" secondAttribute="height" multiplier="1:1" id="DvS-Pa-q7X"/>
                                                     </constraints>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZI-zx-8J5">
+                                                    <rect key="frame" x="71.5" y="8" width="520.5" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="20" id="GxL-wh-RXv"/>
+                                                        <constraint firstAttribute="height" constant="20" id="n1i-8c-teF"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="GxL-wh-RXv"/>
+                                                        </mask>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHM-Tu-tka">
+                                                    <rect key="frame" x="71" y="36" width="521" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="0FT-0q-Nxh"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="PZI-zx-8J5" firstAttribute="leading" secondItem="z8i-Jz-UsG" secondAttribute="trailing" constant="8" id="5pM-Qo-wO8"/>
+                                                <constraint firstItem="IHM-Tu-tka" firstAttribute="top" secondItem="PZI-zx-8J5" secondAttribute="bottom" constant="8" id="7ds-cZ-UIr"/>
                                                 <constraint firstItem="z8i-Jz-UsG" firstAttribute="leading" secondItem="d9A-iF-UXg" secondAttribute="leading" constant="8" id="93Z-LI-JB7"/>
+                                                <constraint firstItem="IHM-Tu-tka" firstAttribute="leading" secondItem="z8i-Jz-UsG" secondAttribute="trailing" constant="8" id="AkL-9x-J49"/>
                                                 <constraint firstAttribute="bottom" secondItem="z8i-Jz-UsG" secondAttribute="bottom" constant="8" id="Awg-YU-JXw"/>
+                                                <constraint firstAttribute="trailing" secondItem="PZI-zx-8J5" secondAttribute="trailing" constant="8" id="DHt-Fh-UAa"/>
                                                 <constraint firstItem="z8i-Jz-UsG" firstAttribute="top" secondItem="d9A-iF-UXg" secondAttribute="top" constant="8" id="ZHN-3y-LwE"/>
+                                                <constraint firstAttribute="trailing" secondItem="IHM-Tu-tka" secondAttribute="trailing" constant="8" id="aNV-Ke-Mos"/>
+                                                <constraint firstItem="PZI-zx-8J5" firstAttribute="top" secondItem="d9A-iF-UXg" secondAttribute="top" constant="8" id="v4r-Gk-EkJ"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="producerName" destination="IHM-Tu-tka" id="bcl-AF-bGU"/>
+                                            <outlet property="productImageView" destination="z8i-Jz-UsG" id="Ka9-Kk-wXf"/>
+                                            <outlet property="productName" destination="PZI-zx-8J5" id="tr9-0G-ocB"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -62,7 +97,4 @@
             <point key="canvasLocation" x="290" y="216"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="art.jpg" width="558" height="558"/>
-    </resources>
 </document>

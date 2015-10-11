@@ -38,6 +38,8 @@
 		1DD18C841BC9F15F00403C2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD18C821BC9F15F00403C2E /* ViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		1DD18C861BC9F16F00403C2E /* Make.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DD18C851BC9F16F00403C2E /* Make.storyboard */; settings = {ASSET_TAGS = (); }; };
 		1DD18C881BC9F19500403C2E /* Uri.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD18C871BC9F19500403C2E /* Uri.swift */; settings = {ASSET_TAGS = (); }; };
+		1DD18C8D1BC9FE7500403C2E /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD18C8C1BC9FE7500403C2E /* Product.swift */; settings = {ASSET_TAGS = (); }; };
+		1DD18C8F1BC9FE8200403C2E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD18C8E1BC9FE8200403C2E /* User.swift */; settings = {ASSET_TAGS = (); }; };
 		53B20B20994C264FF907AB56 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7C6DFB70179A74FFF0C0E51 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -87,6 +89,8 @@
 		1DD18C821BC9F15F00403C2E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Initial/ViewController.swift; sourceTree = "<group>"; };
 		1DD18C851BC9F16F00403C2E /* Make.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Make.storyboard; path = Make/Make.storyboard; sourceTree = "<group>"; };
 		1DD18C871BC9F19500403C2E /* Uri.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Uri.swift; path = Common/Uri.swift; sourceTree = "<group>"; };
+		1DD18C8C1BC9FE7500403C2E /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Product.swift; path = Model/Product.swift; sourceTree = "<group>"; };
+		1DD18C8E1BC9FE8200403C2E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Model/User.swift; sourceTree = "<group>"; };
 		71BB359AFBF1A34E7D9660FC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B7C6DFB70179A74FFF0C0E51 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8EEE61B570B57466BA60A06 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				1DD18C801BC9F0C900403C2E /* Common */,
+				1DD18C891BC9FE3400403C2E /* Model */,
 				1D39647F1BB132FF003FD084 /* Initial */,
 				1D407AB01BC60CEA000449E2 /* List */,
 				1D3964801BB13306003FD084 /* Make */,
@@ -248,6 +253,15 @@
 				1DD18C871BC9F19500403C2E /* Uri.swift */,
 			);
 			name = Common;
+			sourceTree = "<group>";
+		};
+		1DD18C891BC9FE3400403C2E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1DD18C8E1BC9FE8200403C2E /* User.swift */,
+				1DD18C8C1BC9FE7500403C2E /* Product.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		E0B6C9B9EF2C0EF93F5C3CFB /* Pods */ = {
@@ -442,9 +456,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D39647C1BB12C24003FD084 /* MakeViewController.swift in Sources */,
+				1DD18C8D1BC9FE7500403C2E /* Product.swift in Sources */,
 				1DD18C881BC9F19500403C2E /* Uri.swift in Sources */,
 				1D407AB21BC60D0B000449E2 /* ListViewController.swift in Sources */,
 				1DD18C831BC9F15F00403C2E /* AppDelegate.swift in Sources */,
+				1DD18C8F1BC9FE8200403C2E /* User.swift in Sources */,
 				1D3964881BB135FF003FD084 /* ReadViewController.swift in Sources */,
 				1DD18C841BC9F15F00403C2E /* ViewController.swift in Sources */,
 				1D39647A1BB12BF5003FD084 /* SettingViewController.swift in Sources */,

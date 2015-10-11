@@ -12,10 +12,12 @@ class Uri: NSObject {
     let root:String!
     let api:String!
     let usersApi:String!
+    let productsApi:String!
     override init(){
 //        root = "http://localhost:3000"
-        root = "https://realart.herokuapp.com"
+        root = "https://realarts.herokuapp.com"
         api = root + "/api/v1"
         usersApi = api + "/users"
+        productsApi = api + "/products"
     }
 }
