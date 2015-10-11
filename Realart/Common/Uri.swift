@@ -11,9 +11,11 @@ import UIKit
 class Uri: NSObject {
     let root:String!
     let api:String!
+    let usersApi:String!
     override init(){
-        //        root = "http://localhost:3000"
+//        root = "http://localhost:3000"
         root = "https://realart.herokuapp.com"
         api = root + "/api/v1"
+        usersApi = api + "/users"
     }
 }

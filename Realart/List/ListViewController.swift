@@ -7,16 +7,24 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class ListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     @IBOutlet weak var tableView: UITableView!
-
+    let uri = Uri()
+    var currentUserId:Int!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.whiteColor()
         tableView.delegate = self
         tableView.dataSource = self
         self.view.addSubview(tableView)
+        
+        currentUserId = 1
+        
+        fetchData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,6 +52,18 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath:NSIndexPath) {
+    }
+    
+    func fetchData(){
+        let parameters = [
+            "id":currentUserId
+        ]
+        
+        Alamofire.request(.POST, uri.usersApi + "/list", parameters: parameters, encoding: .JSON)
+            .responseJSON { request, response, result in
+                let jsonObj = JSON(result.value!)
+                print(jsonObj)
+        }
     }
 
 }
