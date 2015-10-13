@@ -10,17 +10,18 @@ import UIKit
 import CoreImage
 
 class MakeViewController: UIViewController, UITextFieldDelegate{
-    @IBOutlet weak var postButton: UIButton!
     @IBOutlet weak var nameField: UITextField!
-    @IBOutlet weak var registerButton: UIButton!
+    @IBOutlet weak var idField: UITextField!
     @IBOutlet weak var qrImageView: UIImageView!
+    @IBOutlet weak var printButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 //        postButton.setTitle("投稿", forState:.Normal)
-        registerButton.setTitle("登録", forState: .Normal)
-        
-        nameField.delegate = self
+        nameField.placeholder = "名前"
+//        nameField.delegate = self
+        idField.delegate = self
+        idField.placeholder = "ID"
     }
     
     func createQRCode(message: String, correctionLevel: String = "M", moduleSize: CGFloat = 1){

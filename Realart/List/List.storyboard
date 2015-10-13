@@ -28,13 +28,13 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="71.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="z8i-Jz-UsG">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="art.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="z8i-Jz-UsG">
                                                     <rect key="frame" x="8" y="8" width="55.5" height="55.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="z8i-Jz-UsG" secondAttribute="height" multiplier="1:1" id="DvS-Pa-q7X"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZI-zx-8J5">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name: Obj1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZI-zx-8J5">
                                                     <rect key="frame" x="71.5" y="8" width="520.5" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="20" id="GxL-wh-RXv"/>
@@ -49,7 +49,7 @@
                                                         </mask>
                                                     </variation>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHM-Tu-tka">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Producer: Tom.    Address: 1fasdjfaijafajjalfja" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHM-Tu-tka">
                                                     <rect key="frame" x="71" y="36" width="521" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="0FT-0q-Nxh"/>
@@ -97,4 +97,7 @@
             <point key="canvasLocation" x="290" y="216"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="art.jpg" width="558" height="558"/>
+    </resources>
 </document>

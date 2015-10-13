@@ -25,7 +25,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         currentUserId = 1
         
-        fetchData()
+//        fetchData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,7 +40,8 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int  {
-        return products.count
+//        return products.count
+        return 3
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
@@ -49,8 +50,8 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath:NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Product") as! ListTableViewCell
-        cell.productName.text = products[indexPath.row].name
-        cell.producerName.text = products[indexPath.row].user.name
+//        cell.productName.text = products[indexPath.row].name
+//        cell.producerName.text = products[indexPath.row].user.name
         return cell
     }
     

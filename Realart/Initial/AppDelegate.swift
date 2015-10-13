@@ -35,10 +35,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         listTab.tabBarItem = UITabBarItem(title: "List", image: UIImage(named: "list25.png"), tag: 1)
         
         let makeTab: UIViewController = makeViewController
-        makeTab.tabBarItem = UITabBarItem(title: "Edit", image: UIImage(named: "edit25.png"), tag: 2)
+        makeTab.tabBarItem = UITabBarItem(title: "Upload", image: UIImage(named: "edit25.png"), tag: 2)
        
         let readTab: UIViewController = readViewController
-        readTab.tabBarItem = UITabBarItem(title: "Read", image: UIImage(named: "camera25.png"), tag: 3)
+        readTab.tabBarItem = UITabBarItem(title: "Download", image: UIImage(named: "camera25.png"), tag: 3)
        
         let settingTab: UIViewController = settingViewController
         settingTab.tabBarItem = UITabBarItem(title: "Setting", image: UIImage(named: "setting25.png"), tag: 4)
