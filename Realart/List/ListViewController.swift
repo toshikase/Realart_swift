@@ -41,7 +41,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int  {
 //        return products.count
-        return 3
+        return 1
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
@@ -50,12 +50,16 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath:NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Product") as! ListTableViewCell
+        
 //        cell.productName.text = products[indexPath.row].name
 //        cell.producerName.text = products[indexPath.row].user.name
         return cell
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath:NSIndexPath) {
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath:NSIndexPath){
+        let storyboard = UIStoryboard(name: "Product", bundle: nil)
+        let controller = storyboard.instantiateViewControllerWithIdentifier("ProductVC") as! ProductViewController
+        self.navigationController!.pushViewController(controller, animated:true)
     }
     
     func fetchData(){
