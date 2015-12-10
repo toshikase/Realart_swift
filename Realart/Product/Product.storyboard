@@ -28,17 +28,17 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="190.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="art.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ElB-rL-iVN">
-                                                    <rect key="frame" x="205" y="0.0" width="190.5" height="190.5"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="picasso.png" translatesAutoresizingMaskIntoConstraints="NO" id="ElB-rL-iVN">
+                                                    <rect key="frame" x="225" y="10" width="150.5" height="170.5"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" secondItem="ElB-rL-iVN" secondAttribute="height" multiplier="1:1" id="xh2-YF-M4G"/>
+                                                        <constraint firstAttribute="width" secondItem="ElB-rL-iVN" secondAttribute="height" multiplier="4.4:5" id="xh2-YF-M4G"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="ElB-rL-iVN" firstAttribute="centerX" secondItem="PdM-fm-wTw" secondAttribute="centerX" id="Ylu-Zd-rFk"/>
-                                                <constraint firstAttribute="bottom" secondItem="ElB-rL-iVN" secondAttribute="bottom" id="bnP-OI-uWp"/>
-                                                <constraint firstItem="ElB-rL-iVN" firstAttribute="top" secondItem="PdM-fm-wTw" secondAttribute="top" id="i2W-w8-gnl"/>
+                                                <constraint firstAttribute="bottom" secondItem="ElB-rL-iVN" secondAttribute="bottom" constant="10" id="bnP-OI-uWp"/>
+                                                <constraint firstItem="ElB-rL-iVN" firstAttribute="top" secondItem="PdM-fm-wTw" secondAttribute="top" constant="10" id="i2W-w8-gnl"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -104,6 +104,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="art.jpg" width="558" height="558"/>
+        <image name="picasso.png" width="426" height="518"/>
     </resources>
 </document>

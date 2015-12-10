@@ -18,10 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
         // Tabに設定するViewControllerのインスタンスを生成.
-        let listStoryboard = UIStoryboard(name: "List", bundle: nil)
-        let listViewController = listStoryboard.instantiateViewControllerWithIdentifier("ListVC") as! ListViewController
-        let listNavigationController = UINavigationController(rootViewController:listViewController)
-        
+//        let listStoryboard = UIStoryboard(name: "List", bundle: nil)
+//        let listViewController = listStoryboard.instantiateViewControllerWithIdentifier("ListVC") as! ListViewController
+//        let listNavigationController = UINavigationController(rootViewController:listViewController)
+//
+        let productStoryboard = UIStoryboard(name: "Product", bundle: nil)
+        let productViewController = productStoryboard.instantiateViewControllerWithIdentifier("ProductVC") as! ProductViewController
         
         let makeStoryboard = UIStoryboard(name: "Make", bundle: nil)
         let makeViewController = makeStoryboard.instantiateViewControllerWithIdentifier("MakeVC") as! MakeViewController
@@ -32,7 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let settingStoryboard = UIStoryboard(name: "Setting", bundle: nil)
         let settingViewController = settingStoryboard.instantiateViewControllerWithIdentifier("SettingVC") as! SettingViewController
         
-        let listTab: UIViewController = listNavigationController
+        let listTab: UIViewController = productViewController
         listTab.tabBarItem = UITabBarItem(title: "List", image: UIImage(named: "list25.png"), tag: 1)
         
         let makeTab: UIViewController = makeViewController

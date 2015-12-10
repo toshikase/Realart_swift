@@ -36,6 +36,7 @@
 		1D407AB41BC60D1A000449E2 /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D407AB31BC60D1A000449E2 /* List.storyboard */; };
 		1D52B8261BF6EF20008C97EC /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D52B8251BF6EF20008C97EC /* ProductViewController.swift */; };
 		1D52B8281BF6EF30008C97EC /* Product.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D52B8271BF6EF30008C97EC /* Product.storyboard */; };
+		1DB6E5481BF86A2800066585 /* picasso.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DB6E5471BF86A2800066585 /* picasso.png */; };
 		1DD18C831BC9F15F00403C2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD18C811BC9F15F00403C2E /* AppDelegate.swift */; };
 		1DD18C841BC9F15F00403C2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD18C821BC9F15F00403C2E /* ViewController.swift */; };
 		1DD18C861BC9F16F00403C2E /* Make.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DD18C851BC9F16F00403C2E /* Make.storyboard */; };
@@ -89,6 +90,7 @@
 		1D407AB31BC60D1A000449E2 /* List.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = List.storyboard; path = List/List.storyboard; sourceTree = "<group>"; };
 		1D52B8251BF6EF20008C97EC /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductViewController.swift; path = Product/ProductViewController.swift; sourceTree = "<group>"; };
 		1D52B8271BF6EF30008C97EC /* Product.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Product.storyboard; path = Product/Product.storyboard; sourceTree = "<group>"; };
+		1DB6E5471BF86A2800066585 /* picasso.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = picasso.png; path = Images/picasso.png; sourceTree = "<group>"; };
 		1DD18C811BC9F15F00403C2E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Initial/AppDelegate.swift; sourceTree = "<group>"; };
 		1DD18C821BC9F15F00403C2E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Initial/ViewController.swift; sourceTree = "<group>"; };
 		1DD18C851BC9F16F00403C2E /* Make.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Make.storyboard; path = Make/Make.storyboard; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 				1D407A911BC51913000449E2 /* home@2x.jpeg */,
 				1D407A941BC51A24000449E2 /* art.jpg */,
 				1D407A951BC51A24000449E2 /* art@2x.jpg */,
+				1DB6E5471BF86A2800066585 /* picasso.png */,
 				1D407A981BC60A53000449E2 /* list25.png */,
 				1D407A991BC60A53000449E2 /* list25@2x.png */,
 				1D407A9A1BC60A53000449E2 /* list25@3x.png */,
@@ -391,6 +394,7 @@
 				1D407A921BC51913000449E2 /* home.jpeg in Resources */,
 				1D407AAC1BC60A6A000449E2 /* camera25@3x.png in Resources */,
 				1D39645D1BB12A15003FD084 /* Main.storyboard in Resources */,
+				1DB6E5481BF86A2800066585 /* picasso.png in Resources */,
 				1D52B8281BF6EF30008C97EC /* Product.storyboard in Resources */,
 				1D407AA11BC60A53000449E2 /* setting25.png in Resources */,
 				1D407AB41BC60D1A000449E2 /* List.storyboard in Resources */,
