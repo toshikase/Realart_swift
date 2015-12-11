@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProductViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
+class AssetDetailViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
 
     override func viewDidLoad() {

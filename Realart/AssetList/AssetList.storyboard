@@ -5,10 +5,10 @@
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--List View Controller-->
+        <!--Asset List View Controller-->
         <scene sceneID="373-Sa-qF9">
             <objects>
-                <viewController storyboardIdentifier="ListVC" id="Zz3-xo-odb" customClass="ListViewController" customModule="Realart" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AssetListVC" id="Zz3-xo-odb" customClass="AssetListViewController" customModule="Realart" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kTb-MO-VM4"/>
                         <viewControllerLayoutGuide type="bottom" id="tD9-tI-azV"/>

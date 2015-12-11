@@ -18,15 +18,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
         // Tabに設定するViewControllerのインスタンスを生成.
-//        let listStoryboard = UIStoryboard(name: "List", bundle: nil)
-//        let listViewController = listStoryboard.instantiateViewControllerWithIdentifier("ListVC") as! ListViewController
-//        let listNavigationController = UINavigationController(rootViewController:listViewController)
+//        let assetListStoryboard = UIStoryboard(name: "AssetList", bundle: nil)
+//        let assetListViewController = assetListStoryboard.instantiateViewControllerWithIdentifier("AssetListVC") as! AssetListViewController
+//        let assetListNavigationController = UINavigationController(rootViewController:assetListViewController)
 //
-        let productStoryboard = UIStoryboard(name: "Product", bundle: nil)
-        let productViewController = productStoryboard.instantiateViewControllerWithIdentifier("ProductVC") as! ProductViewController
+        let assetDetailStoryboard = UIStoryboard(name: "AssetDetail", bundle: nil)
+        let assetDetailViewController = assetDetailStoryboard.instantiateViewControllerWithIdentifier("AssetDetailVC") as! AssetDetailViewController
         
-        let makeStoryboard = UIStoryboard(name: "Make", bundle: nil)
-        let makeViewController = makeStoryboard.instantiateViewControllerWithIdentifier("MakeVC") as! MakeViewController
+        let issueStoryboard = UIStoryboard(name: "Issue", bundle: nil)
+        let issueViewController = issueStoryboard.instantiateViewControllerWithIdentifier("IssueVC") as! IssueViewController
         
         let readStoryboard = UIStoryboard(name: "Read", bundle: nil)
         let readViewController = readStoryboard.instantiateViewControllerWithIdentifier("ReadVC") as! ReadViewController
@@ -34,11 +34,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let settingStoryboard = UIStoryboard(name: "Setting", bundle: nil)
         let settingViewController = settingStoryboard.instantiateViewControllerWithIdentifier("SettingVC") as! SettingViewController
         
-        let listTab: UIViewController = productViewController
+        let listTab: UIViewController = assetDetailViewController
         listTab.tabBarItem = UITabBarItem(title: "List", image: UIImage(named: "list25.png"), tag: 1)
         
-        let makeTab: UIViewController = makeViewController
-        makeTab.tabBarItem = UITabBarItem(title: "Upload", image: UIImage(named: "edit25.png"), tag: 2)
+        let issueTab: UIViewController = issueViewController
+        issueTab.tabBarItem = UITabBarItem(title: "Upload", image: UIImage(named: "edit25.png"), tag: 2)
        
         let readTab: UIViewController = readViewController
         readTab.tabBarItem = UITabBarItem(title: "Download", image: UIImage(named: "camera25.png"), tag: 3)
@@ -47,7 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         settingTab.tabBarItem = UITabBarItem(title: "Setting", image: UIImage(named: "setting25.png"), tag: 4)
         
         // タブを要素に持つArrayの.を作成する.
-        let myTabs = NSArray(objects: listTab, makeTab, readTab, settingTab)
+        let myTabs = NSArray(objects: listTab, issueTab, readTab, settingTab)
         
         myTabBarController = UITabBarController()
         

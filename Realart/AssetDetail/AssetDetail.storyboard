@@ -5,10 +5,10 @@
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--Product View Controller-->
+        <!--Asset Detail View Controller-->
         <scene sceneID="Rim-Xd-bv0">
             <objects>
-                <viewController storyboardIdentifier="ProductVC" id="V7j-1b-ZCd" customClass="ProductViewController" customModule="Realart" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AssetDetailVC" id="V7j-1b-ZCd" customClass="AssetDetailViewController" customModule="Realart" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1G4-dP-rwu"/>
                         <viewControllerLayoutGuide type="bottom" id="W1T-eq-7IQ"/>

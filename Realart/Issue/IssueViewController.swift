@@ -9,7 +9,7 @@
 import UIKit
 import CoreImage
 
-class MakeViewController: UIViewController, UITextFieldDelegate{
+class IssueViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var idField: UITextField!
     @IBOutlet weak var qrImageView: UIImageView!

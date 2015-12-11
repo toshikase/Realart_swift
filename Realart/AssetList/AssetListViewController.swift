@@ -10,7 +10,7 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
-class ListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
+class AssetListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     @IBOutlet weak var tableView: UITableView!
     let uri = Uri()
     var currentUserId:Int!
@@ -57,8 +57,8 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath:NSIndexPath){
-        let storyboard = UIStoryboard(name: "Product", bundle: nil)
-        let controller = storyboard.instantiateViewControllerWithIdentifier("ProductVC") as! ProductViewController
+        let storyboard = UIStoryboard(name: "AssetDetail", bundle: nil)
+        let controller = storyboard.instantiateViewControllerWithIdentifier("AssetDetailVC") as! AssetDetailViewController
         self.navigationController!.pushViewController(controller, animated:true)
     }
     
