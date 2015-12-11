@@ -19,9 +19,7 @@ class IssueViewController: UIViewController, UITextFieldDelegate{
         super.viewDidLoad()
 //        postButton.setTitle("投稿", forState:.Normal)
         nameField.placeholder = "名前"
-//        nameField.delegate = self
-        idField.delegate = self
-        idField.placeholder = "ID"
+        nameField.delegate = self
     }
     
     func createQRCode(message: String, correctionLevel: String = "M", moduleSize: CGFloat = 1){
